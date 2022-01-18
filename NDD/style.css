@@ -1,0 +1,90 @@
+main {
+    display: grid;
+    grid-template-areas:
+        "he he he he"
+        "na na na na"
+        "ar ar ar as"
+        "fo fo fo fo";
+}
+
+h1 {
+    color: rgb(0, 135, 104);
+}
+
+header {
+    grid-area: he;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    grid-area: na;
+    background-color: rgb(0, 135, 104);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(0, 100, 78);
+}
+
+article {
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+article img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+aside {
+    grid-area: as;
+    padding-right: 20px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+aside img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+footer {
+    grid-area: fo;
+    text-align: center;
+}
+
+.ember {
+    padding: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.erdekes {
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+}
